@@ -21,6 +21,7 @@ package:
 	mkdir -p ${IPS_BUILD_DIR}/data/${PROJECT}/etc
 	echo ls ${RELEASE_DIR}
 	mv ${RELEASE_DIR}/dpx/etc/dpx.conf ${IPS_BUILD_DIR}/data/${PROJECT}/etc/dalmatinerpx.conf
+	$(call add-ips-transform, "<transform file path=data/dalmatinerpx/etc/dalmatinerpx.conf -> add preserve true>")
 
 	# SMF
 	mkdir -p ${IPS_BUILD_DIR}/lib/svc/manifest/application/
