@@ -20,7 +20,7 @@ package:
 	mkdir -p ${IPS_BUILD_DIR}/opt/ ${IPS_TMP_DIR} "${IPS_BUILD_DIR}/etc"
 	mkdir -p ${IPS_BUILD_DIR}/data/${PROJECT}/etc
 	echo ls ${RELEASE_DIR}
-	mv ${RELEASE_DIR}/dfe/etc/dalmatinerpx.conf.example ${IPS_BUILD_DIR}/data/${PROJECT}/etc/dalmatinerpx.conf
+	mv ${RELEASE_DIR}/dpx/etc/dalmatinerpx.conf.example ${IPS_BUILD_DIR}/data/${PROJECT}/etc/dalmatinerpx.conf
 
 	# SMF
 	mkdir -p ${IPS_BUILD_DIR}/lib/svc/manifest/application/
